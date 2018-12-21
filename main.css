@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Asap', sans-serif;
+	margin:20px;
+	text-align: center;
+
+}
+
+nav {
+	/*height: 50px;*/
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+main {
+	margin-top: 120px;
+}
+
+h2 {
+	border: 2px solid black;
+}
+
+nav p {
+	padding: 10px;
+}
+
+
+.hero-image {
+	max-height: 150px;
+	margin-top: 20px;
+	opacity: .70;
+}
+
+.landscape {
+	max-height: 300px;
+	height: auto;
+	max-width: 100%
+}
+
+.mobile {
+	height: 200px;
+}
