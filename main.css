@@ -22,7 +22,14 @@ nav {
 	left: 0;
 	right: 0;
 	z-index: 10;
+}
 
+nav p:hover {
+	cursor: pointer;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 nav p {
