@@ -6,17 +6,16 @@ body {
 	font-family: 'Asap', sans-serif;
 	margin:20px;
 	text-align: center;
-
 }
 
 nav {
-	/*height: 50px;*/
-	border: 2px solid black;
+	border-bottom: silver 3px solid;
+	padding: 5px;
 	background-color: white;
 	color: black;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -24,8 +23,19 @@ nav {
 	z-index: 10;
 }
 
+.name {
+	background-color: black;
+	color: white;
+	padding: 6px;
+	border-radius: 3px;
+}
+
 main {
-	margin-top: 120px;
+	margin-top: 100px;
+}
+
+.headline {
+	border-bottom: silver 3px solid;
 }
 
 h2 {
@@ -35,7 +45,6 @@ h2 {
 nav p {
 	padding: 10px;
 }
-
 
 .hero-image {
 	max-height: 150px;
@@ -52,3 +61,17 @@ nav p {
 .mobile {
 	height: 200px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
