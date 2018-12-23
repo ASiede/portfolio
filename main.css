@@ -4,62 +4,125 @@
 
 body {
 	font-family: 'Asap', sans-serif;
-	margin:20px;
 	text-align: center;
+	margin: 0px;
 }
 
 nav {
 	border-bottom: silver 3px solid;
-	padding: 5px;
+	padding: 0px 0px;
+	/*margin-top: 10px;*/
 	background-color: white;
 	color: black;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 10;
+
+}
+
+nav p {
+	font-size: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	vertical-align: middle;
 }
 
 .name {
 	background-color: black;
 	color: white;
-	padding: 6px;
-	border-radius: 3px;
 }
 
 main {
-	margin-top: 100px;
+	margin-top: 70px;
 }
 
-.headline {
-	border-bottom: silver 3px solid;
+.headline{
+	background: 
+	    linear-gradient(
+	      rgba(107, 185, 240, 0.55), 
+	      rgba(107, 185, 240, 0.55)
+	    ),
+    	url(./images/hero-bw.jpg);
+ 	min-height: 250px;
+	max-height: 400px;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+h1 {
+	margin: 5px;
 }
 
 h2 {
-	border: 2px solid black;
+	border-top: 3px silver solid;
+	border-bottom: 3px silver solid;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 7px;
+}
+
+
+.cinemeal-wrapper {
+	
+}
+
+.cinemeal-wrapper img {
+	height: 100%;
+	width: 100%;
+}
+
+h3 {
+	background-color: white;
+	width: 100%;
+	margin-bottom: 5px;
+	z-index: 5;
 }
 
 nav p {
 	padding: 10px;
 }
 
-.hero-image {
-	max-height: 150px;
-	margin-top: 20px;
-	opacity: .70;
+.project-links {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+
+.projects, .about-me, .contact {
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
 .landscape {
 	max-height: 300px;
 	height: auto;
-	max-width: 100%
+	max-width: 100%;
+	/*opacity: .65;*/
+	border: black solid 2px;
+	border-radius: 5px;
+
 }
 
 .mobile {
 	height: 200px;
+}
+
+.projects-links {
+	padding-top: 0px;
+}
+
+.project-links p {
+	padding: 3px;
+	margin-top: 0px;
 }
 
 
