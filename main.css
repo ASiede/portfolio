@@ -3,20 +3,24 @@
 }
 
 body {
-	font-family: 'Asap', sans-serif;
+	font-family: 'PT Serif', serif;
 	text-align: center;
 	margin: 0px;
 }
 
+nav, h1, h2 {
+	font-family: 'Poppins', sans-serif;
+}
+
 nav {
+	background-color: #013243;
 	border-bottom: silver 3px solid;
 	padding: 0px 0px;
-	/*margin-top: 10px;*/
-	background-color: white;
 	color: black;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -26,6 +30,7 @@ nav {
 
 nav p:hover {
 	cursor: pointer;
+	text-decoration: underline;
 }
 
 .underline {
@@ -33,26 +38,59 @@ nav p:hover {
 }
 
 nav p {
+	margin: 0px;
 	font-size: 15px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	vertical-align: middle;
-}
-
-.name {
-	background-color: black;
 	color: white;
 }
 
+.hello {
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.short-headline {
+	font-size: 23px;
+	width: 80%;
+}
+
+.name {
+	background-color: #752B34;
+	width: 30%;
+	color: white;
+	font-size: 17px;
+}
+
 main {
-	margin-top: 70px;
+	margin-top: 90px;
+	margin-bottom: 50px;
 }
 
 .headline{
+ 	min-height: 250px;
+	max-height: 400px;
+	color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+.hero-image {
+	max-height: 100px;
+	max-width: 100px;
+	border-radius: 100%;
+
+}
+
+/*.headline{
 	background: 
 	    linear-gradient(
-	      rgba(107, 185, 240, 0.55), 
-	      rgba(107, 185, 240, 0.55)
+	      rgba(107, 185, 240, 0.4), 
+	      rgba(107, 185, 240, 0.4)
 	    ),
     	url(./images/hero-bw.jpg);
  	min-height: 250px;
@@ -62,11 +100,15 @@ main {
 	color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-}
+	justify-content: flex-end;
+}*/
 
 h1 {
-	margin: 5px;
+	margin-top: 35px;
+	margin-bottom: 15px;
+	font-size: 25px;
+	align-self: center;
+
 }
 
 h2 {
@@ -74,7 +116,10 @@ h2 {
 	border-bottom: 3px silver solid;
 	margin-left: 10px;
 	margin-right: 10px;
+	margin-bottom: 30px;
+	margin-top: 20px;
 	padding: 7px;
+	font-size: 18px;
 }
 
 
@@ -82,15 +127,15 @@ h2 {
 	
 }
 
-.cinemeal-wrapper img {
+.project-wrapper img {
 	height: 100%;
-	width: 100%;
+	width: 80%;
 }
 
 h3 {
 	background-color: white;
 	width: 100%;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	z-index: 5;
 }
 
@@ -100,8 +145,9 @@ nav p {
 
 .project-links {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	margin-bottom: 50px;
+	padding-top: 0px;
 }
 
 .projects, .about-me, .contact {
@@ -110,9 +156,10 @@ nav p {
 }
 
 .landscape {
-	max-height: 300px;
+	max-height: 525px;
+	max-width: 1526px;
 	height: auto;
-	max-width: 100%;
+	width: auto;
 	/*opacity: .65;*/
 	border: black solid 2px;
 	border-radius: 5px;
@@ -123,20 +170,101 @@ nav p {
 	height: 200px;
 }
 
-.projects-links {
-	padding-top: 0px;
+a {
+	text-decoration: none;
+	color: inherit;
 }
+
 
 .project-links p {
+	border: #013243 solid 2px;
 	padding: 3px;
 	margin-top: 0px;
+	color: #013243;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.project-links p:hover{
+	background-color: #013243;
+	color: white;
+	cursor: pointer;
 }
 
 
+.contact img {
+	max-height: 25px;
+	max-width: 25px;
+	height: auto;
+	width: auto;
+	margin-right: 10px;
+}
+
+.contact p {
+	text-align: left;
+	vertical-align: center;
+}
+
+.contact p:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+/*
+MEDIA QUERIES
+*/
+
+/*screen size small*/
+@media only screen 
+    and (min-width: 322px) 
+    and (max-width: 645px) {
+
+	nav {
+		border-bottom: red 3px solid;
+	}	    	
+}  
+
+/* screen size medium*/
+@media only screen 
+and (min-width: 645px) 
+and (max-width: 1000px) {
+	nav {
+		border-bottom: green 3px solid;
+	}
+
+	nav p {
+		font-size: 1.2em;
+	}
+	.name {
+		font-size: 1.2em;
+	}
+
+	.hero-image {
+		max-height: 150px;
+		max-width: 150px;
+		border-radius: 100%;
+	}
+	.hello {
+		margin-top: 15px;
+		margin-left: 20px;
+		margin-right: 105px;
+		display: flex;
+		justify-content: space-around;
+	}
 
 
 
+} 
 
+/* screen size large */
+@media only screen 
+and (min-width: 1000px) {
+	nav {
+		border-bottom: pink 3px solid;
+	}
+
+} 
 
 
 

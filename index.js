@@ -1,42 +1,34 @@
 'use strict';
 
-function clearOtherTabs () {
-	$('.js-contact').css('text-decoration', 'none');
-	$('.js-about').css('text-decoration', 'none');
-	$('.js-portfolio').css('text-decoration', 'none');
-	$('.about-me').prop('hidden', true);
-	$('.contact').prop('hidden', true);
-    $('.projects').prop('hidden', true);
-}
-
 function showPortfolio() {
 	$('.js-portfolio').on('click', event => {
-		clearOtherTabs()
-    	$('.projects').prop('hidden', false);
-    	$('.js-portfolio').css('text-decoration', 'underline')
+    	$([document.documentElement, document.body]).animate({
+    		scrollTop: $('.projects').offset().top -80
+    	}, 1000);
     });
 }
 
 function showAbout() {
 	$('.js-about').on('click', event => {
-		clearOtherTabs();
-		$('.about-me').prop('hidden', false);
-    	$('.js-about').css('text-decoration', 'underline')
+		$([document.documentElement, document.body]).animate({
+    		scrollTop: $('.about-me').offset().top -80
+    	}, 1000);
     });
 }
 
 function showContact() {
 	$('.js-contact').on('click', event => {
-		clearOtherTabs();
-		$('.contact').prop('hidden', false);
-    	$('.js-contact').css('text-decoration', 'underline')
+		$([document.documentElement, document.body]).animate({
+    		scrollTop: $('.contact').offset().top -80
+    	}, 1000);
     });
 }
 
 function handleNameClick() {
 	$('.js-name').on('click', event => {
-		clearOtherTabs();
-		$('.about-me').prop('hidden', false);
+		$([document.documentElement, document.body]).animate({
+    		scrollTop: $('body').offset().top -80
+    	}, 1000);
     });
 }
 
