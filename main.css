@@ -52,6 +52,7 @@ nav p {
 	margin-right: 15px;
 	display: flex;
 	justify-content: space-around;
+	max-width: 80%;
 }
 
 .short-headline {
@@ -83,7 +84,6 @@ main {
 	max-height: 100px;
 	max-width: 100px;
 	border-radius: 100%;
-
 }
 
 /*.headline{
@@ -191,6 +191,25 @@ a {
 	cursor: pointer;
 }
 
+.technologies {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+.technologies img {
+	height: 36px;
+	width: auto;
+	padding: 5px;
+	transition-property: height;
+	transition-duration: 1s;
+}
+
+.technologies img:hover {
+	height: 56px;
+}
 
 .contact img {
 	max-height: 25px;
@@ -218,7 +237,8 @@ MEDIA QUERIES
 /*screen size small*/
 @media only screen 
     and (min-width: 322px) 
-    and (max-width: 645px) {
+   /* and (max-width: 645px) */
+    {
 
 	nav {
 		border-bottom: red 3px solid;
@@ -228,16 +248,14 @@ MEDIA QUERIES
 /* screen size medium*/
 @media only screen 
 and (min-width: 645px) 
-and (max-width: 1000px) {
+/*and (max-width: 1000px) */
+{
 	nav {
 		border-bottom: green 3px solid;
 	}
 
-	nav p {
-		font-size: 1.2em;
-	}
-	.name {
-		font-size: 1.2em;
+	body {
+		font-size: 1.3em;
 	}
 
 	.hero-image {
@@ -251,6 +269,11 @@ and (max-width: 1000px) {
 		margin-right: 105px;
 		display: flex;
 		justify-content: space-around;
+	}
+
+
+	.technologies img {
+		height: 42px;
 	}
 
 
