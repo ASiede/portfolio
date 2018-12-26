@@ -86,29 +86,11 @@ main {
 	border-radius: 100%;
 }
 
-/*.headline{
-	background: 
-	    linear-gradient(
-	      rgba(107, 185, 240, 0.4), 
-	      rgba(107, 185, 240, 0.4)
-	    ),
-    	url(./images/hero-bw.jpg);
- 	min-height: 250px;
-	max-height: 400px;
-	background-size: cover;
-	background-position: center;
-	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-}*/
-
 h1 {
 	margin-top: 35px;
 	margin-bottom: 15px;
 	font-size: 25px;
 	align-self: center;
-
 }
 
 h2 {
@@ -123,13 +105,15 @@ h2 {
 }
 
 
-.cinemeal-wrapper {
-	
-}
-
 .project-wrapper img {
 	height: 100%;
 	width: 80%;
+}
+
+.project-wrapper p {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h3 {
@@ -156,14 +140,13 @@ nav p {
 }
 
 .landscape {
-	max-height: 525px;
-	max-width: 1526px;
+	max-height: 700px;
+	max-width: 1145px;
 	height: auto;
 	width: auto;
 	/*opacity: .65;*/
 	border: black solid 2px;
 	border-radius: 5px;
-
 }
 
 .mobile {
@@ -174,7 +157,6 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-
 
 .project-links p {
 	border: #013243 solid 2px;
@@ -271,9 +253,12 @@ and (min-width: 645px)
 		justify-content: space-around;
 	}
 
-
 	.technologies img {
 		height: 42px;
+	}
+
+	.contact p {
+		text-align: center;
 	}
 
 
@@ -285,6 +270,25 @@ and (min-width: 645px)
 and (min-width: 1000px) {
 	nav {
 		border-bottom: pink 3px solid;
+	}
+
+	nav p, .name {
+		font-size: .75em;
+	}
+
+	body {
+		font-size: 1.6em;
+	}
+
+	.about-me, .projects, .contact {
+		text-align: center;
+		max-width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.technologies img {
+		height: 52px;
 	}
 
 } 
