@@ -32,7 +32,7 @@ function handleNameClick() {
     });
 }
 
-function init () {
+function init() {
 	$(showPortfolio);
 	$(showAbout);
 	$(showContact);

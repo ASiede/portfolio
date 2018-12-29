@@ -28,7 +28,7 @@ nav {
 	z-index: 10;
 }
 
-nav p:hover {
+nav p:hover, nav p:focus {
 	cursor: pointer;
 	text-decoration: underline;
 }
